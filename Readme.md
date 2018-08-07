@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Сергей Кравцов](https://up.htmlacademy.ru/htmlcss/22/user/249461).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
