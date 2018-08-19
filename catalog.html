@@ -9,17 +9,19 @@
 <body>
   <header class="main-header">
     <div class="logo">
-      <a href="index.html"><img src="img/logo.svg" width="163" height="34" alt="DEVICE"></a>
+      <a><img src="img/logo.svg" width="163" height="35" alt="Онлайн магазин DEVICE"></a>
     </div>
-    <form action="#" method="get">
-      <input type="search" placeholder="Поиск по сайту">
+    <form action="/echo.htmlacademy.ru" method="get">
+      <label for="search" class="visually-hidden">Поиск по сайту</label>
+      <input type="search" id="search" placeholder="Поиск по сайту">
     </form>
     <ul class="user-nav">
-      <li><a href="#">Войти</a></li>
+      <li><a href="#">Валентин Петухов</a></li>
+      <li><a href="#">Выйти</a></li>
     </ul>
     <ul class="store-nav">
-      <li>Сравнить</li>
-      <li>Корзина</li>
+      <li><a href="#">Сравнить</a></li>
+      <li><a href="#">Корзина</a></li>
     </ul>
     <nav class="main-nav">
       <ul class="main-menu">
@@ -44,11 +46,42 @@
     <ul class="breadcrumbs">
       <li><a href="index.html">Главная</a></li>
       <li><a href="#">Каталог товаров</a></li>
-      <li><a href="#">Моноподы для селфи</a></li>
+      <li><a>Моноподы для селфи</a></li>
     </ul>
     <section class="catalog-filter">
       <h2 class="visually-hidden">Фильтр:</h2>
-      <!--Форма сортировки-->
+      <form action="echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Стоимость:</legend>
+          <div class="range-filter">
+            <div class="scale">
+              <div class="range"></div>
+            </div>
+            <button class="toggle toggle-min" aria-label="Минимальная стоимость"></button>
+            <button class="toggle toggle-max" aria-label="Максимальная стоимость"></button>
+            <p>от 0</p>
+            <p>до 5000</p>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Цвет</legend>
+          <ul>
+            <li><input type="checkbox" class="visually-hidden filter-inpu-checkbox" name="black" id="black" checked><label for="black">Черный</label></li>
+            <li><input type="checkbox" class="visually-hidden filter-inpu-checkbox" name="white" id="white"><label for="white">Белый</label></li>
+            <li><input type="checkbox" class="visually-hidden filter-inpu-checkbox" name="blue" id="blue" checked><label for="blue">Синий</label></li>
+            <li><input type="checkbox" class="visually-hidden filter-inpu-checkbox" name="red" id="red" checked><label for="red">Красный</label></li>
+            <li><input type="checkbox" class="visually-hidden filter-inpu-checkbox" name="pink" id="pink"><label for="pink">Розовый</label></li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <ul>
+            <li><input type="radio" class="visually-hidden filter-input-radio" name="bluetooth" value="yes" id="bluetoohs-yes" checked><label for="bluetoohs-yes">Есть</label></li>
+            <li><input type="radio" class="visually-hidden filter-input-radio" name="bluetooth" value="no" id="bluetoohs-no"><label for="bluetoohs-no">Нет</label></li>
+          </ul>
+        </fieldset>
+        <button class="btn">Показать</button>
+      </form>
     </section>
     <section class="catalog">
       <div class="sort">
@@ -57,8 +90,8 @@
           <li><a href="#">По цене</a></li>
           <li><a href="#">По типу</a></li>
           <li><a href="#">По популярности</a></li>
-          <li><a href="#">&#9660;</a></li>
-          <li><a href="#">&#9650;</a></li>
+          <li><a href="#" aria-label="от дешевых"><img src="img/icon-up-dir.svg" width="11" height="10" alt="от дешевых"></a></li>
+          <li><a href="#" aria-label="от дорогих"><img src="img/icon-down-dir.svg" width="11" height="10" alt="от дорогих"></a></li>
         </ul>
       </div>
       <section class="cards">
@@ -68,12 +101,20 @@
             <b>Любительская селфи-палка</b>
             <p>500 руб.</p>
           </div>
+          <div class="to-cart">
+            <a href="#" class="btn">В корзину</a>
+            <a href="#" class="comparison">Добавить к сравнению</a>
+          </div>
         </div>
         <div class="card">
           <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
           <div>
             <b>Профессиональная селфи-палка</b>
             <p>1 500 руб.</p>
+          </div>
+          <div class="to-cart">
+            <a href="#" class="btn">В корзину</a>
+            <a href="#" class="comparison">Добавить к сравнению</a>
           </div>
         </div>
         <div class="card">
@@ -82,12 +123,20 @@
             <b>Непотопляемая селфи-палка</b>
             <p>2 500 руб.</p>
           </div>
+          <div class="to-cart">
+            <a href="#" class="btn">В корзину</a>
+            <a href="#" class="comparison">Добавить к сравнению</a>
+          </div>
         </div>
         <div class="card">
           <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной">
           <div>
             <b>Селфи-палка "Следуй за мной"</b>
             <p>4 900 руб.</p>
+          </div>
+          <div class="to-cart">
+            <a href="#" class="btn">В корзину</a>
+            <a href="#" class="comparison">Добавить к сравнению</a>
           </div>
         </div>
         <div class="paginator">
@@ -102,14 +151,14 @@
   </main>
   <footer class="main-footer">
     <div class="footer-logo">
-      <img src="img/logo.svg" width="163" height="35" alt="DEVICE">
+      <a><img src="img/logo.svg" width="163" height="35" alt="Онлайн-магазин DEVICE"></a>
     </div>
     <ul class="user-nav">
       <li><a href="#">Войти</a></li>
     </ul>
     <ul class="store-nav">
-      <li>Сравнить</li>
-      <li>Корзина</li>
+     <li><a href="#">Сравнить</a></li>
+     <li><a href="#">Корзина</a></li>
     </ul>
     <p class="address">г.Москва, ул.Строителей, 15</p>
     <ul class="footer-nav">
@@ -119,9 +168,9 @@
     </ul>
     <p class="phone">Тел.: +7(495)495-95-95</p>
     <ul class="social">
-      <li><a href="#" class="social-btn social-btn-fb">Facebook</a></li>
-      <li><a href="#" class="social-btn social-btn-ins">Instagram</a></li>
-      <li><a href="#" class="social-btn social-btn-tw">Twitter</a></li>
+      <li><a href="#" class="social-btn social-btn-fb">Мы на Facebook</a></li>
+      <li><a href="#" class="social-btn social-btn-ins">Мы в Instagram</a></li>
+      <li><a href="#" class="social-btn social-btn-tw">Мы в Twitter</a></li>
     </ul>
     <p class="author"><a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></p>
   </footer>

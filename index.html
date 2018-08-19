@@ -9,17 +9,18 @@
 <body>
   <header class="main-header">
     <div class="logo">
-      <a><img src="img/logo.svg" width="163" height="35" alt="DEVICE"></a>
+      <a><img src="img/logo.svg" width="163" height="35" alt="Онлайн магазин DEVICE"></a>
     </div>
-    <form action="#" method="get">
-      <input type="search" placeholder="Поиск по сайту">
+    <form action="/echo.htmlacademy.ru" method="get">
+      <label for="search" class="visually-hidden">Поиск по сайту</label>
+      <input type="search" id="search" placeholder="Поиск по сайту">
     </form>
     <ul class="user-nav">
       <li><a href="#">Войти</a></li>
     </ul>
     <ul class="store-nav">
-      <li>Сравнить</li>
-      <li>Корзина</li>
+      <li><a href="#">Сравнить</a></li>
+      <li><a href="#">Корзина</a></li>
     </ul>
     <nav class="main-nav">
       <ul class="main-menu">
@@ -40,6 +41,7 @@
     </nav>
   </header>
   <main class="container">
+   <h1 class="visually-hidden">Онлайн магазин Device</h1>
     <section class="slider">
       <h2 class="visually-hidden">Лучшие товары</h2>
       <div class="slider-contorls">
@@ -129,14 +131,6 @@
         <li><a href="#" class="btn">Гарантия</a></li>
         <li><a href="#" class="btn">Кредит</a></li>
       </ul>
-    </section>
-    <section class="brands">
-      <ul>
-        <li><a href="#"><img src="img/dji-b.png" width="260" height="100" alt="dji"></a></li>
-        <li><a href="#"><img src="img/spgadjets-b.png" width="260" height="100" alt="SP Gadgets"></a></li>
-        <li><a href="#"><img src="img/gopro-b.png" width="260" height="100" alt="GoPro"></a></li>
-        <li><a href="#"><img src="img/vive-b.png" width="260" height="100" alt="Vive"></a></li>
-      </ul>
       <div class="delivery">
         <h3>Доставка</h3>
         <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
@@ -149,6 +143,14 @@
         <h3>Кредит</h3>
         <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
       </div>
+    </section>
+    <section class="brands">
+      <ul>
+        <li><a href="#"><img src="img/dji-b.png" width="260" height="100" alt="dji"></a></li>
+        <li><a href="#"><img src="img/spgadjets-b.png" width="260" height="100" alt="SP Gadgets"></a></li>
+        <li><a href="#"><img src="img/gopro-b.png" width="260" height="100" alt="GoPro"></a></li>
+        <li><a href="#"><img src="img/vive-b.png" width="260" height="100" alt="Vive"></a></li>
+      </ul>
     </section>
     <section class="about-us">
       <h2>О нас</h2>
@@ -164,20 +166,20 @@
     <section class="contacts">
       <h2>Контакты</h2>
       <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-      <img src="img/small-map.jpg" width="560" height="223" alt="Маленькая карта">
+      <a href="#"><img src="img/small-map.jpg" width="560" height="223" alt="г.Москва, ул.Строителей 15"></a>
       <p><a href="#" class="btn">Напишите нам</a></p>
     </section>
   </main>
   <footer class="main-footer">
     <div class="footer-logo">
-      <img src="img/logo.svg" width="163" height="35" alt="DEVICE">
+      <a><img src="img/logo.svg" width="163" height="35" alt="Онлайн-магазин DEVICE"></a>
     </div>
     <ul class="user-nav">
       <li><a href="#">Войти</a></li>
     </ul>
     <ul class="store-nav">
-      <li>Сравнить</li>
-      <li>Корзина</li>
+     <li><a href="#">Сравнить</a></li>
+     <li><a href="#">Корзина</a></li>
     </ul>
     <p class="address">г.Москва, ул.Строителей, 15</p>
     <ul class="footer-nav">
@@ -187,17 +189,16 @@
     </ul>
     <p class="phone">Тел.: +7(495)495-95-95</p>
     <ul class="social">
-      <li><a href="#" class="social-btn social-btn-fb">Facebook</a></li>
-      <li><a href="#" class="social-btn social-btn-ins">Instagram</a></li>
-      <li><a href="#" class="social-btn social-btn-tw">Twitter</a></li>
+      <li><a href="#" class="social-btn social-btn-fb">Мы на Facebook</a></li>
+      <li><a href="#" class="social-btn social-btn-ins">Мы в Instagram</a></li>
+      <li><a href="#" class="social-btn social-btn-tw">Мы в Twitter</a></li>
     </ul>
     <p class="author"><a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></p>
   </footer>
   <section class="modal modal-write-us">
     <h3>Напишите нам</h3>
     <button class="btn-close">Закрыть</button>
-    <!--Здесь должны быть форма
-    <form action="#" method="post">
+    <form action="\echo.htmlacademy.ru" method="post">
       <p>
         <label for="name">Ваше имя:</label>
         <input type="text" class="name" id="name" placeholder="Имя Фамилия">
@@ -212,12 +213,11 @@
       </p>
       <button type="submit" class="btn">Отправить</button>
     </form>
-    -->
   </section>
   <section class="modal modal-map">
     <h3>Карта</h3>
     <button class="btn-close">Закрыть</button>
-    <img src="img/map.jpg" width="964" height="560" alt="Большая карта">
+      <a href="#"><img src="img/map.jpg" width="964" height="560" alt="г.Москва, ул.Строителей 15"></a>
   </section>
 </body>
 </html>
