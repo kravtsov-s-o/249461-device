@@ -625,29 +625,9 @@ img {
   padding: 0;
 }
 
-.description-slide tbody {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.description-slide tr {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-  width: 158px;
+.description-slide th,
+.description-slide td{
+  min-width: 138px;
   text-align: left;
 }
 
@@ -656,10 +636,6 @@ img {
   font-size: 13px;
   line-height: 20px;
   padding: 5px;
-}
-
-.description-slide tr:nth-child(2) {
-  width: 138px;
 }
 
 .description-slide td {
@@ -826,15 +802,6 @@ img {
 #warranty:checked ~ .services-controls .services-btn-2::before,
 #credit:checked ~ .services-controls .services-btn-3::before {
   display: none;
-}
-
-#delivery:checked ~ .services-controls .services-btn-1:hover,
-#warranty:checked ~ .services-controls .services-btn-2:hover,
-#credit:checked ~ .services-controls .services-btn-3:hover {
-  color: #000000;
-  background-color: #f0c52e;
-  padding: 8px 0;
-  width: 160px;
 }
 
 .services-slide::after {
