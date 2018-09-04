@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>DEVICE</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/min.style.css">
 </head>
 
 <body>
@@ -23,7 +23,7 @@
           </form>
         </div>
         <ul class="user-nav">
-          <li><a href="#" class="login">Войти</a></li>
+          <li><a href="login.html" class="login">Войти</a></li>
         </ul>
         <ul class="store-nav">
           <li><a href="#" class="compare">Сравнить</a></li>
@@ -71,7 +71,7 @@
         </div>
         <div class="slide slide-1">
           <div class="slide-image">
-            <img src="img/monopod.png" class="portait" width="390" height="480" alt="Монопод для селфи">
+            <img src="img/monopod.png" class="portrait" width="384" height="486" alt="Монопод для селфи">
           </div>
           <div class="description-slide">
             <p class="slide-number">01</p>
@@ -94,7 +94,7 @@
         </div>
         <div class="slide slide-2">
           <div class="slide-image">
-            <img src="img/fitness-bracelet.png" class="portait" width="390" height="480" alt="Фитнес-браслет">
+            <img src="img/fitness-bracelet.png" class="portait" width="345" height="485" alt="Фитнес-браслет">
           </div>
           <div class="description-slide">
             <p class="slide-number">02</p>
@@ -113,7 +113,7 @@
         </div>
         <div class="slide slide-3">
           <div class="slide-image">
-            <img src="img/quadrocopter.png" class="landscape" width="530" height="320" alt="Квадрокоптер">
+            <img src="img/quadrocopter.png" class="landscape" width="526" height="334" alt="Квадрокоптер">
           </div>
           <div class="description-slide">
             <p class="slide-number">03</p>
@@ -158,7 +158,7 @@
                   </g>
                 </svg>
               </span><br>
-              Моноподы для селфи
+              Моноподы<br>для селфи
             </a>
           </li>
           <li>
@@ -294,9 +294,9 @@
           <input type="radio" class="visually-hidden toggle" name="toggle" id="warranty">
           <input type="radio" class="visually-hidden toggle" name="toggle" id="credit">
           <ul class="services-controls">
-            <li><label for="delivery" class="btn services-btn services-btn-1">Доставка</label></li>
-            <li><label for="warranty" class="btn services-btn services-btn-2">Гарантия</label></li>
-            <li><label for="credit" class="btn services-btn services-btn-3">Кредит</label></li>
+            <li><label for="delivery" class="btn services-btn services-btn-1" tabindex="0">Доставка</label></li>
+            <li><label for="warranty" class="btn services-btn services-btn-2" tabindex="0">Гарантия</label></li>
+            <li><label for="credit" class="btn services-btn services-btn-3" tabindex="0">Кредит</label></li>
           </ul>
           <div class="services-description">
             <div class="services-slide delivery">
@@ -390,11 +390,11 @@
     <form action="https://echo.htmlacademy.ru" method="post">
       <p>
         <label for="name">Ваше имя:</label><br>
-        <input type="text" class="name" id="name" placeholder="Имя Фамилия">
+        <input type="text" class="name" id="name" name="name" placeholder="Имя Фамилия">
       </p>
       <p>
         <label for="email">Ваш e-mail:</label><br>
-        <input type="email" class="email" id="email" placeholder="email@example.com">
+        <input type="email" class="email" id="email" name="email" placeholder="email@example.com">
       </p>
       <p>
         <label for="text-mail">Текст письма:</label><br>
@@ -410,7 +410,9 @@
     <a href="https://www.google.com/maps/place/ул.+Строителей,+15,+Москва,+Россия,+119311/@55.687031,37.5274293,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54cf65f5c8955:0x694710ccd55501e!8m2!3d55.687031!4d37.529618" class="visually-hidden"><img src="img/map.jpg" width="964" height="560" alt="г.Москва, ул.Строителей 15"></a>
   </section>
 
-  <script src="js/script.js"></script>
+  <div class="modal-overlay"></div>
+
+  <script src="js/min.script.js"></script>
 </body>
 
 </html>

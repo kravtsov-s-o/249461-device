@@ -169,7 +169,6 @@ img {
           box-sizing: border-box;
   cursor: pointer;
 }
-
 .search input:focus + .search-btn {
   display: block;
 }
@@ -337,6 +336,7 @@ img {
 
 .show-sub-menu > a {
   position: relative;
+  letter-spacing: 3.5px;
 }
 
 .show-sub-menu > a::after {
@@ -451,7 +451,7 @@ img {
 
 .slider {
   position: relative;
-  margin-bottom: 90px;
+  margin-bottom: 80px;
 }
 
 .slider-controls {
@@ -502,6 +502,7 @@ img {
   position: relative;
   display: none;
   padding: 20px;
+  flex-shrink: 0;
 }
 
 #slide-1:checked ~ .slide-1 {
@@ -552,26 +553,32 @@ img {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   width: 550px;
-  min-height: 480px;
+  min-height: 490px;
   -ms-flex-item-align: center;
       align-self: center;
   text-align: center;
 }
 
-.slide-1 img,
+.slide-1 img{
+  width: 384px;
+  height: 486px;
+  margin-left: 70px;
+  margin-top: -2px;
+}
 .slide-2 img {
-  width: 390px;
-  height: 480px;
+  width: 345px;
+  height: 485px;
+  margin-left: 80px;
+  margin-top: 0;
 }
 
 .slide-3 img {
-  width: 530px;
-  height: 320px;
+  width: 526px;
+  height: 334px;
+  margin-left: 10px;
+  margin-top: 63px;
 }
 
-.slide-image img {
-  margin: auto;
-}
 
 .description-slide {
   position: relative;
@@ -1387,10 +1394,11 @@ img {
   top: 50%;
   left: 50%;
   margin-left: -480px;
-  -webkit-transform: translateY(-50%);
+  margin-top: -300px;
+  /*-webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  z-index: 3;
+          transform: translateY(-50%);*/
+  z-index: 5;
   -webkit-box-shadow: 0 10px 20px 3px rgba(0, 0, 0, 0.2);
           box-shadow: 0 10px 20px 3px rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
@@ -1531,8 +1539,59 @@ img {
   background-size: contain;
 }
 
+@keyframes manifestation{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+.modal-overlay{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  background: rgba(0,0,0,0);
+}
+
+.modal-overlay-show{
+  display: block;
+}
+
 .modal-show {
   display: block;
+  animation-name: manifestation;
+  animation-duration: 0.6s;
+}
+
+.modal-error{
+  animation: shake 0.6s;
 }
 
 
