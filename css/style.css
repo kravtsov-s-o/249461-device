@@ -129,6 +129,7 @@ img {
   padding-bottom: 5.5px;
   padding-left: 38px;
   width: 441px;
+  height: 47px;
   border: none;
   color: rgba(0, 0, 0, 0.3);
   font: inherit;
@@ -164,9 +165,7 @@ img {
   line-height: 30px;
   background-color: #f7e296;
   border: 2px solid #000000;
-
   -webkit-box-sizing: border-box;
-
           box-sizing: border-box;
   cursor: pointer;
 }
@@ -252,7 +251,7 @@ img {
 .user-nav .login::before {
   content: "";
   position: absolute;
-  top: 20px;
+  top: 19px;
   left: -2px;
   width: 13px;
   height: 12px;
@@ -1537,12 +1536,8 @@ img {
 .modal-write-us textarea {
   font: inherit;
   background-color: #f2f2f2;
-  border: none;
   margin-top: 10px;
   margin-bottom: 30px;
-  padding: 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   border: 3px solid transparent;
 }
 
@@ -1551,6 +1546,8 @@ img {
   width: 360px;
   height: 50px;
   padding: 20px;
+  padding-top: 12px;
+  padding-bottom: 14px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1800,7 +1797,7 @@ img {
 }
 
 .sort li:nth-last-child(2) {
-  margin-left: 200px;
+  margin-left: 222px;
   margin-right: 19px;
 }
 
@@ -1831,7 +1828,28 @@ img {
 
 .sort .arrow-up,
 .sort .arrow-down {
+  position: relative;
   opacity: 0.3;
+}
+
+.sort .arrow-up::before,
+.sort .arrow-down::before{
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: 1px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 11px solid #000000;
+}
+.sort .arrow-up::before{
+  right: 12px
+}
+.sort .arrow-down::before{
+  border-top: 11px solid #000000;
+  border-bottom: none;
 }
 
 .sort .arrow-up:hover,
@@ -1868,8 +1886,11 @@ img {
 
 .catalog-filter {
   padding-left: 58px;
-  padding-right: 68px;
+  padding-right: 60px;
   background-color: #ebebeb;
+  width: 346px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .catalog-filter fieldset {
@@ -2074,7 +2095,7 @@ img {
 .card {
   position: relative;
   width: 360px;
-  margin-left: 40px;
+  margin-left: 39px;
   margin-bottom: 45px;
 }
 
@@ -2142,7 +2163,7 @@ img {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-.to-cart div {
+.to-cart{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2151,6 +2172,8 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .to-cart a {
