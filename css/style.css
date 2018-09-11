@@ -1888,7 +1888,7 @@ img {
   padding-left: 58px;
   padding-right: 60px;
   background-color: #ebebeb;
-  width: 346px;
+  width: 328px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -2074,9 +2074,11 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 802px;
+  width: 832px;
   background-color: #fff;
   padding-left: 72px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .cards {
