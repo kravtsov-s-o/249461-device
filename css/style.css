@@ -676,7 +676,7 @@ img {
 
 
 .categories {
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 
 .categories ul {
@@ -705,52 +705,65 @@ img {
   margin-right: 0;
 }
 
-.categories a {
+.categories .popular{
+  position: relative;
+  display: block;
+  width: 160px;
+  min-height: 240px;
+
   font-family: "Gilroy", arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 23px;
+  text-align: left;
   color: #000000;
   letter-spacing: 0.18px;
 }
 
-.categories span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.popular::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
   width: 160px;
   height: 160px;
-  background: rgba(240, 197, 46, 0.5);
-  margin-bottom: 10px;
+  background-color: rgba(240, 197, 46, 0.5);
 }
 
 .virt-reality svg{
   margin-top: 52px;
   margin-left: 31px;
+  margin-bottom: 81px;
 }
 .monopods svg{
   margin-top: 41px;
   margin-left: 38px;
+  margin-bottom: 30px;
 }
 .action-cameras svg{
   margin-top: 38px;
   margin-left: 49px;
+  margin-bottom: 63px;
 }
 .fitness-bracelets svg{
   margin-top: 50px;
   margin-left: 28px;
+  margin-bottom: 73px;
 }
 .smart-watch svg{
   margin-top: 32px;
   margin-left: 55px;
+  margin-bottom: 58px;
 }
 .quadrocopters svg{
   margin-top: 49px;
   margin-left: 13px;
+  margin-bottom: 70px;
 }
 
-.popular:hover span {
-  background: rgba(240, 197, 46, 1);
+.popular:hover::before{
+  background-color: rgba(240, 197, 46, 1);
 }
 
 .popular:active {
