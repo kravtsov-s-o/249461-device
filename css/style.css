@@ -1574,6 +1574,8 @@ img {
   padding: 10px;
   padding-top: 7px;
   resize: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .modal-write-us input:hover,
