@@ -591,10 +591,10 @@ img {
   margin-left: 30px;
 }
 
-.description-slide .slide-number {
+.description-slide > .slide-number {
   position: absolute;
   top: -17px;
-  right: -308px;
+  right: 0px;
   z-index: -1;
   padding: 0;
   margin: 0;
@@ -625,9 +625,9 @@ img {
   letter-spacing: 0.47px;
 }
 
-.description-slide p {
+.description-slide > p {
   display: block;
-  width: 490px;
+  max-width: 490px;
   margin-top: 20px;
   margin-bottom: 43px;
   font-weight: 300;
@@ -729,6 +729,10 @@ img {
   width: 160px;
   height: 160px;
   background-color: rgba(240, 197, 46, 0.5);
+}
+
+.popular svg{
+  pointer-events: none;
 }
 
 .virt-reality svg{
@@ -1460,9 +1464,6 @@ img {
   left: 50%;
   margin-left: -480px;
   margin-top: -300px;
-  /*-webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);*/
   z-index: 5;
   -webkit-box-shadow: 0 10px 20px 3px rgba(0, 0, 0, 0.2);
           box-shadow: 0 10px 20px 3px rgba(0, 0, 0, 0.2);
@@ -1538,10 +1539,12 @@ img {
 }
 
 .modal-write-us label {
+  display: block;
   font-family: "Gilroy", arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
+  width: 360px;
 }
 
 .modal-write-us input[type="text"],
@@ -1558,9 +1561,9 @@ img {
 .modal-write-us input[type="email"] {
   width: 360px;
   height: 50px;
-  padding: 20px;
-  padding-top: 12px;
-  padding-bottom: 14px;
+  padding: 10px;
+  padding-left: 17px;
+  padding-right: 17px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1569,6 +1572,7 @@ img {
   width: 760px;
   height: 156px;
   padding: 10px;
+  padding-top: 7px;
   resize: none;
 }
 
